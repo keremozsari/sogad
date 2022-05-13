@@ -1,0 +1,288 @@
+.database{
+    background-image: url(../img/database.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 400px;
+    opacity: .9;
+    position: relative;
+}
+
+.bg-soft{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(77,98,104, .2);
+}
+
+.image-title-content{
+    position:absolute;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%, 100%);
+}
+
+.image-title{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.image-sub-title{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.nav-tabs-primary{
+    flex-direction: column;
+    border-right: 1px solid #DBDBDB;
+    border-bottom: 0 !important;
+}
+
+.nav-item-primary:hover .nav-link-primary{
+    color: #4D6268 !important;
+    text-decoration: underline !important;
+}
+
+.nav-link-primary{
+    color: #323840 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    margin: 2px 0;
+    transition: all .3s ease;
+}
+
+.top-text{
+    background-color: #A4B8BD;
+    margin-right: 105px;
+}
+
+.top-text p{
+    font-style: italic;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 0;
+    line-height: 35px;
+    padding: 40px 80px;
+}
+
+.content-texts{
+    margin: 50px 0; 
+    font-size: 1rem;
+    margin-right: 105px;
+}
+
+.title-color{
+    color: #4D6268 !important; 
+}
+
+.products-content{
+    margin: 40px 0;
+}
+
+.products-card{
+    display: flex;
+    margin: 50px 0;
+}
+
+.products-image{
+    position: relative;
+}
+
+.products-image img{
+    width: 340px;
+    height: 270px;
+}
+
+.products-image span{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 120px;
+    background-color: rgba(98,208,213, .8);
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0px 20px;
+    line-height: 35px;
+}
+
+.products-detail{
+    padding: 0 100px 0 20px;
+}
+
+.products-title{
+    color: #2A2E30;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.products-text{
+    color: #2A2E30;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/********** Keyframes **********/
+
+.fade-in{
+    opacity: 1;
+    animation: fade-in 2s;
+}
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/********** Keyframes End **********/
+
+/********** Media Queries **********/
+
+@media screen and (max-width:1400px) {
+    html{
+        font-size: 15px !important;
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+    html{
+        font-size: 14px !important; 
+    }
+
+    .top-text{
+        margin-right: 0;
+    }
+
+    .top-text p {
+        line-height: 29px;
+        padding: 20px 40px;
+    }
+
+    .products-image img {
+        width: 300px;
+        height: 230px;
+    }
+
+    .products-detail {
+        padding: 0 0px 0 20px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    html{
+        font-size: 14px !important;
+    }
+
+    .database {
+        height: 300px;
+        background-position: top;
+        background-size: auto;
+    }
+
+    .products-card{
+        flex-direction: column;
+    }
+
+    .products-image{
+        margin-bottom: 10px;
+    }
+
+    .products-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .products-detail {
+        padding: 0;
+    }
+
+    .content-texts{
+        margin-right: 0;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    html{
+        font-size: 13px !important;
+    }
+
+    .nav-tabs-primary{
+        height: auto;
+        flex-direction: row;
+        margin-bottom: 10px;
+        justify-content: space-around;
+    }
+
+    .nav-tabs-primary{
+        border-right: 0;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    html{
+        font-size: 12px !important;
+    }
+
+    .top-text p {
+        line-height: 23px;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    html{
+        font-size: 11px !important;
+    }
+
+    .database {
+        height: 280px;
+    }
+
+    .top-text p {
+        line-height: 20px;
+    }
+
+}
+
+@media screen and (max-width:415px) {
+    html{
+        font-size: 10px !important;
+    }
+
+    .database {
+        height: 270px;
+    }
+
+    .products-card{
+        margin-bottom: 20px;
+    }
+
+    .products-image span{
+        width: 90px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    html{
+        font-size: 9px !important;
+    }
+
+    .top-text p {
+        padding: 5px 10px;
+    }
+
+}
+
+/********** Media Queries End **********/

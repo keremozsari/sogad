@@ -1,0 +1,432 @@
+.society-about{
+    background-image: url(../img/about.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 50px;
+    height: 400px;
+    opacity: .9;
+    position: relative;
+}
+
+.image-title-content{
+    position:absolute;
+    top: 10%;
+    left: 25%;
+    transform: translate(-50%, 100%);
+}
+
+.image-title{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.image-sub-title{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.nav-tabs-primary{
+    flex-direction: column;
+    border-right: 1px solid #DBDBDB;
+    border-bottom: 0 !important;
+}
+
+.nav-item-primary:hover .nav-link-primary{
+    color: #4D6268 !important;
+    text-decoration: underline !important;
+}
+
+.nav-link-primary{
+    color: #323840 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    margin: 2px 0;
+    transition: all .3s ease;
+}
+  
+.top-text{
+    background-color: #A4B8BD;
+    margin-right: 105px;
+}
+
+.top-text p{
+    font-style: italic;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 0;
+    line-height: 35px;
+    padding: 40px 80px;
+}
+
+.content-texts{
+    margin: 50px 0; 
+    font-size: 1rem;
+    margin-right: 105px;
+}
+
+.title-color{
+    color: #4D6268 !important; 
+}
+
+.content-texts ul{
+    margin-left: 27px;
+}
+
+.content-texts ul li{
+    list-style-type: disc;
+}
+
+.list-style-decimal li{
+    list-style-type: decimal !important;
+    margin-left: 18px;
+    margin-bottom: 20px;
+}
+
+.list-style-alpha li{
+    list-style-type: lower-alpha !important;
+    margin-left: 18px;
+}
+
+.pdf-content{
+    background-color: #D5DEE1;
+    padding: 20px 140px 20px 30px;
+    border-radius: 20px;
+    width: fit-content;
+    margin-bottom: 120px;
+}
+
+.pdf-logo img{
+    width: 60px;
+}
+
+.pdf-text{
+    color: #323840;
+    padding: 0px 20px;
+}
+
+.pdf-text:hover{
+    color: #4D6268;
+    text-decoration: underline !important;
+}
+
+.page-title{
+    font-size: 1.75rem;
+    font-weight: 300;
+    color: #323840;
+}
+
+.border-bottom-management{
+    display: block;
+    width: 21%;
+    border-bottom: 4px solid #6E8D95;
+    position: relative;
+    top: 1px;
+}
+
+.management-card{
+    border: 1px solid #A0A0A0;
+    padding: 2px;
+    display: flex;
+    margin: 30px 0;
+    width: fit-content;
+}
+
+.chairman{
+    background-color: #4D6268;
+    padding: 20px;
+}
+
+.chairman-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.chairman-number{
+    font-size: 5rem;
+    color: #A4B8BD;
+}
+
+.chairman-name, .audit-name{
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.chairman-tittle, .chairman-company, .audit-tittle, .audit-company{
+    font-size: 1rem;
+    color: #fff;
+}
+
+.chairman-tittle, .audit-tittle{
+    line-height: 16px;
+}
+
+.chairman-others{
+    padding: 5px 15px;
+}
+
+.chairman-item{
+    display: flex;
+    align-items: center;
+}
+
+.chairman-item-number{
+    font-size: 1.8rem;
+    color: #A4B8BD;
+    padding: 5px;
+}
+
+.chairman-item-detail{
+    line-height: 16px;
+    padding: 0 15px;
+}
+
+.chairman-item-name, .chairman-item-company, .audit-item-name{
+    font-size: 1rem;
+    color: #484847;
+}
+
+.audit-card{
+    border: 1px solid #A0A0A0;
+    padding: 2px;
+    display: flex;
+    margin: 30px 0;
+    width: fit-content;
+}
+
+.audit{
+    background-color: #B1B1B1;
+    padding: 60px 40px;
+}
+
+.list-style-desc li{
+    list-style-type: disc !important;
+    margin-left: 18px;
+}
+
+/********** Keyframes **********/
+
+.fade-in{
+    opacity: 1;
+    animation: fade-in 2s;
+}
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/********** Keyframes End **********/
+
+/********** Media Queries **********/
+
+@media screen and (max-width:1400px) {
+    html{
+        font-size: 15px !important;
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+    html{
+        font-size: 14px !important; 
+    }
+
+    .top-text{
+        margin-right: 0;
+    }
+
+    .top-text p {
+        line-height: 29px;
+        padding: 20px 40px;
+    }
+
+    .content-texts {
+        margin: 30px 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:992px) {
+    html{
+        font-size: 14px !important;
+    }
+
+    .society-about {
+        height: 350px;
+    }
+
+    .pdf-content{
+        padding: 20px;
+        margin-bottom: 50px;
+    }
+
+    .pdf-logo img {
+        width: 45px;
+    }
+
+    .chairman{
+        padding: 10px;
+    }
+
+    .chairman-number {
+        font-size: 3rem;
+    }
+
+    .chairman-name {
+        font-size: 1.2rem;
+    }
+
+    .chairman-tittle {
+        line-height: 10px;
+    }
+
+    .chairman-tittle, .chairman-company {
+        font-size: .7rem;
+    }
+
+    .chairman-others {
+        padding: 5px 10px;
+    }
+
+    .chairman-item-number {
+        font-size: 1.2rem;
+        padding: 5px;
+    }
+
+    .chairman-item-detail {
+        line-height: 11px;
+        padding: 0px 5px;
+    }
+
+    .chairman-item-name, .chairman-item-company {
+        font-size: .7rem;
+        color: #484847;
+    }
+
+    .chairman-item-name, .chairman-item-company {
+        font-size: .7rem;
+        color: #484847;
+    }
+
+    .audit {
+        padding: 50px 30px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    html{
+        font-size: 13px !important;
+    }
+
+    .society-about {
+        height: 320px;
+    }
+
+    .nav-tabs-primary{
+        height: auto;
+        flex-direction: row;
+        margin-bottom: 10px;
+        justify-content: space-around;
+    }
+
+    .nav-tabs-primary{
+        border-right: 0;
+    }
+
+    .nav-link-primary{
+        padding: 5px 2px !important;
+    }
+}
+
+@media screen and (max-width:600px) {
+    html{
+        font-size: 12px !important;
+    }
+
+    .society-about {
+        height: 300px;
+    }
+
+    .top-text p {
+        line-height: 23px;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    html{
+        font-size: 11px !important;
+    }
+
+    .society-about {
+        height: 280px;
+    }
+
+    .nav-tabs-primary{
+        flex-flow: inherit;
+    }
+
+    .top-text p {
+        line-height: 20px;
+    }
+
+    .pdf-content{
+        padding: 10px;
+    }
+
+    .pdf-logo img {
+        width: 35px;
+    }
+
+    .chairman {
+        padding: 5px;
+    }
+
+    .chairman-item-number {
+        padding: 2px;
+    }
+
+    .chairman-others {
+        padding: 5px 3px;
+    }
+}
+
+@media screen and (max-width:415px) {
+    html{
+        font-size: 10px !important;
+    }
+    
+    .society-about {
+        height: 270px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    html{
+        font-size: 9px !important;
+    }
+
+    .top-text p {
+        padding: 5px 10px;
+    }
+
+    .pdf-logo img {
+        width: 25px;
+    }
+
+    .pdf-text {
+        padding: 0px 5px;
+    }
+}
+
+/********** Media Queries End **********/

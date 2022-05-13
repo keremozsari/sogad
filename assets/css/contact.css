@@ -1,0 +1,181 @@
+.contact{
+    background-image: url(../img/contact.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 400px;
+    opacity: .9;
+    position: relative;
+}
+
+.bg-soft{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(77,98,104, .2);
+}
+
+.image-title-content{
+    position:absolute;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%, 100%);
+}
+
+.image-title{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.address-content{
+    margin: 20px 60px;
+}
+
+.address-title{
+    font-size: 1.4rem;
+    color: #4D6268;
+    margin: 40px 0;
+}
+
+.address-detail{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+.address-text{
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #324158;
+}
+
+.address-text a{
+    color: #324158;
+}
+
+.address-map{
+    width: 650px;
+    height: 300px;
+}
+
+.address-map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/********** Keyframes **********/
+
+.fade-in{
+    opacity: 1;
+    animation: fade-in 2s;
+}
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/********** Keyframes End **********/
+
+/********** Media Queries **********/
+
+@media screen and (max-width:1400px) {
+    html{
+        font-size: 15px !important;
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+    html{
+        font-size: 14px !important; 
+    }
+
+}
+
+@media screen and (max-width:992px) {
+    html{
+        font-size: 14px !important;
+    }
+
+    .contact {
+        height: 350px;
+        background-position: top;
+        background-size: auto;
+    }
+
+    .address-content {
+        margin: 20px;
+    }
+
+    .address-detail{
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+
+    .address-map {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    html{
+        font-size: 13px !important;
+    }
+
+    .contact {
+        height: 320px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    html{
+        font-size: 12px !important;
+    }
+
+    .contact {
+        height: 300px;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    html{
+        font-size: 11px !important;
+    }
+
+    .contact {
+        height: 280px;
+    }
+
+    .address-map {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:415px) {
+    html{
+        font-size: 10px !important;
+    }
+
+    .contact {
+        height: 270px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    html{
+        font-size: 9px !important;
+    }
+
+}
+
+/********** Media Queries End **********/
